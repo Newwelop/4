@@ -56,13 +56,16 @@ class Human:
             self.enjoyment -= 3
 
     def life(self):
-        r = random.randint(1, 4)
-        if r == 1:
-            self.work()
-        elif r == 2:
-            self.chill()
-        elif r == 3:
-            self.clean_house()
+        def life(self):
+            r = random.randint(1, 4)
+            if r == 1:
+                self.work()
+            elif r == 2:
+                self.chill()
+            elif r == 3:
+                self.clean_house()
+            else:
+                self.shopping()
 
     def is_alive(self):
         if self.money <= 0 or self.home.food <= 0:
